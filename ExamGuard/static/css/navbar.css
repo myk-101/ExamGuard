@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding: 0 30px;
     border-bottom: 2px solid #b5b5b5;
-    position: relative; /* important for mobile dropdown */
+    position: relative;
 }
 
 /* LOGO SECTION */
@@ -31,6 +31,7 @@
     color: #0f4c5c;
 }
 
+/* NAV LINKS (DESKTOP DEFAULT) */
 .nav-links {
     display: flex;
     gap: 40px;
@@ -66,7 +67,7 @@
     width: 100%;
 }
 
-/* SETTINGS */
+
 .settings-box {
     width: 40px;
     height: 40px;
@@ -88,6 +89,11 @@
     font-size: 24px;
     cursor: pointer;
     margin-left: auto;
+}
+
+
+.mobile-settings {
+    display: none;
 }
 
 /* ===================== */
@@ -118,4 +124,11 @@
         display: flex;
     }
 
+    .mobile-settings {
+        display: block;
+    }
+
+    .settings-box {
+        display: none;
+    }
 }
