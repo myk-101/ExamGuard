@@ -15,7 +15,7 @@
   html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden;  /* VERY IMPORTANT */
+    overflow: hidden;  
 }
 </style>
 <body>
@@ -25,5 +25,10 @@
     {% block content %}
     {% endblock %}
 
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
 </body>
 </html>
