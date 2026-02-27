@@ -152,16 +152,15 @@
         height: calc(100vh - 70px);
     }
 
-    .sidebar {
+  .sidebar {
         width: 100%;
         height: auto;
-        padding-right: 2px;
-        max-height: 30vh;
+        margin: auto;
+        max-height: 33vh;
     }
 
     .sidebar .records {
         overflow-y: auto;
-
         scrollbar-width: none;         
         -ms-overflow-style: none;    
     }
@@ -207,4 +206,5 @@
     }
 
 }
+
 
