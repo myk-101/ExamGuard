@@ -151,7 +151,7 @@
         height: calc(100vh - 70px);
     }
 
-     .sidebar {
+    .sidebar {
         width: 100%;
         height: auto;
         padding-right: 2px;
@@ -206,4 +206,3 @@
     }
 
 }
-
