@@ -156,7 +156,7 @@
         width: 100%;
         height: auto;
         margin: auto;
-        max-height: 33vh;
+        max-height: 35vh;
     }
 
     .sidebar .records {
@@ -206,5 +206,6 @@
     }
 
 }
+
 
 
