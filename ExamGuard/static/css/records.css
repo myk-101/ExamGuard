@@ -1,8 +1,8 @@
 /* RECORDS PAGE */
 .records-container {
+    height: calc(100vh - 70px); 
+    overflow-y: auto;    
     padding: 30px;
-    height: calc(100vh - 70px);
-    overflow-y: auto;
     background: linear-gradient(to right, #1f6f8b, #0f4c5c);
     box-sizing: border-box;
 }
@@ -31,7 +31,6 @@
     color: white;
 }
 
-/* PICTURE BOX */
 .record-picture {
     height: 150px;
     border: 2px solid white;
@@ -39,20 +38,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-
-}
-
-@media (max-width: 1024px) {
-    .records-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 @media (max-width: 768px) {
 
     .records-container {
+        height: calc(100vh - 70px); 
         padding: 20px 15px;
-        height: auto;
     }
 
     .records-title {
@@ -72,12 +64,4 @@
     .record-picture {
         height: 120px;
     }
-}
-
-@media (max-width: 480px) {
-
-    .records-grid {
-        grid-template-columns: 1fr;
-    }
-
 }
