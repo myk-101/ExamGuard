@@ -105,10 +105,11 @@
 @media (max-width: 768px) {
 
     .account-card {
-        width: auto;
+        width: 100%;
         height: auto;
         padding: 30px 20px;
         border-radius: 18px;
+        box-sizing: border-box;
     }
 
     .account-top {
