@@ -2,7 +2,7 @@
     display: flex;
     height: calc(100vh - 70px);
     background: linear-gradient(to right, #1f6f8b, #0f4c5c);
-    overflow: hidden; /* para hindi humaba */
+    overflow: hidden; 
 }
 
 .sidebar {
@@ -17,7 +17,7 @@
 
 .sidebar .records {
     flex: 1;
-    overflow-y: auto; /* ito lang mag scroll */
+    overflow-y: auto; 
     padding-right: 10px;
 }
 
