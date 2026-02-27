@@ -59,6 +59,7 @@
 
     .settings-container {
         flex-direction: column;
+        height: calc(100vh - 70px);
     }
 
     .settings-sidebar {
@@ -71,9 +72,8 @@
 
     .settings-sidebar a,
     .settings-sidebar .btn {
-        padding: 12px 15px;
-        white-space: nowrap;
-        font-size: 14px;
+        padding: 8px 12px;
+        font-size: 12px;
     }
 
     .settings-sidebar .logout {
