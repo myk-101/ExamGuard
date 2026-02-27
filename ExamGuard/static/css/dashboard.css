@@ -151,10 +151,11 @@
         height: calc(100vh - 70px);
     }
 
-    .sidebar {
+     .sidebar {
         width: 100%;
         height: auto;
-        max-height: 35vh;
+        padding-right: 2px;
+        max-height: 30vh;
     }
 
     .sidebar .records {
@@ -205,3 +206,4 @@
     }
 
 }
+
