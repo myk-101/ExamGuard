@@ -150,7 +150,7 @@
 
     .sidebar {
         width: 100%;
-        height: 35vh; /* fixed top alert area */
+        height: 35vh;
     }
 
     .main-content {
@@ -161,6 +161,23 @@
 
     .camera-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-records-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .time-date {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+        text-align: center;
     }
 
 }
