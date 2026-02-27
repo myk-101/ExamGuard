@@ -62,33 +62,30 @@
         min-height: 100vh;
     }
 
-    .settings-sidebar {
-        width: 100%;
+     .settings-sidebar {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         align-items: center;
-        gap: 8px;                
-        padding: 8px 12px;
-        overflow-x: hidden;
-        border-right: none;
-        border-bottom: 2px solid rgba(0,0,0,0.3);
-        scrollbar-width: none;     
-    }
-
-    .settings-sidebar::-webkit-scrollbar {
-        display: none;            
+        gap: 8px;
+        padding: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
     }
 
     .settings-sidebar a,
     .settings-sidebar .btn {
+        flex: 0 0 auto;
         padding: 10px 14px;
-        font-size: 12px;
-        border-radius: 4px;
-        flex-shrink: 0;           
+        font-size: 13px;
+        border-radius: 6px;
     }
 
     .settings-sidebar .logout {
         color: red;
+        flex: 0 0 auto;
+        margin-left: auto;
         padding: 10px 14px;
         font-size: 12px;
         font-weight: bold;
