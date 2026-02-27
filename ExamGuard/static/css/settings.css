@@ -65,11 +65,11 @@
     .settings-sidebar {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         gap: 8px;                
         padding: 8px 12px;
-        overflow-x: auto;
+        overflow-x: hidden;
         border-right: none;
         border-bottom: 2px solid rgba(0,0,0,0.3);
         scrollbar-width: none;     
@@ -84,18 +84,24 @@
         padding: 10px 14px;
         font-size: 12px;
         border-radius: 4px;
-        white-space: nowrap;
         flex-shrink: 0;           
     }
 
     .settings-sidebar .logout {
         color: red;
+        padding: 10px 14px;
+        font-size: 12px;
         font-weight: bold;
         flex-shrink: 0;
+        border: 1px solid rgb(245, 30, 30);
         margin-left: 10px;
     }
 
     .settings-container1 {
+        padding: 15px;
+    }
+
+    .settings-container1 .settings-content{
         padding: 15px;
         margin: auto;
     }
