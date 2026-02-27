@@ -157,6 +157,17 @@
         max-height: 35vh;
     }
 
+    .sidebar .records {
+        overflow-y: auto;
+
+        scrollbar-width: none;         
+        -ms-overflow-style: none;    
+    }
+
+    .sidebar .records::-webkit-scrollbar {
+        display: none;   
+    }
+
     .main-content {
         flex: 1;
         padding: 15px;
