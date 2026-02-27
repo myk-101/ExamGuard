@@ -1,0 +1,42 @@
+/* RECORDS PAGE */
+.records-container {
+    padding: 30px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background: linear-gradient(to right, #1f6f8b, #0f4c5c);
+    box-sizing: border-box;
+}
+
+.records-title {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin: 0%;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.records-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.record-card {
+    background: #1d5c73;
+    border: 2px solid #0e3e4f;
+    padding: 15px;
+    height: 230px;
+    color: white;
+}
+
+/* PICTURE BOX */
+.record-picture {
+    height: 150px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}

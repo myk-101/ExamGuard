@@ -1,0 +1,77 @@
+/* CAMERA CARD */
+.camera-card {
+   width: 1000px;
+    height: 500px;
+    background: #e6e6e6;
+    border-radius: 25px;
+    padding: 80px 100px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+}
+
+/* TITLE */
+.camera-card h1 {
+    margin: 0 0 40px 0;
+    font-size: 30px;
+}
+
+/* SECTION LAYOUT */
+.camera-section {
+    display: flex;
+    gap: 80px;
+}
+
+/* PREVIEW BOX */
+.camera-preview {
+    width: 400px;
+    height: 300px;
+    background: #d9d9d9;
+    border-radius: 20px;
+    border: 2px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* CONTROLS */
+.camera-controls {
+    flex: 1;
+}
+
+/* CONTROL GROUP */
+.control-group {
+    margin-bottom: 25px;
+}
+
+.control-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.control-group select {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #2c7da0;
+    border-radius: 8px;
+    background: white;
+}
+
+/* BUTTON */
+.camera-controls button {
+    margin-top: 30px;
+    padding: 14px 60px;
+    background: linear-gradient(to bottom, #2c7da0, #168aad);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.camera-controls button:hover {
+    transform: translateY(-2px);
+}

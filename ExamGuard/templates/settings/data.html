@@ -1,0 +1,35 @@
+{% extends "settings.html" %}
+
+{% block settings_content %}
+
+<div class="data-card">
+
+    <h1>Data / Records</h1>
+
+    <div class="data-section">
+
+        <div class="data-box">
+            <h3>Total Records</h3>
+            <p>1,245</p>
+        </div>
+
+        <div class="data-box">
+            <h3>Storage Used</h3>
+            <p>3.2 GB</p>
+        </div>
+
+        <div class="data-box">
+            <h3>Last Backup</h3>
+            <p>March 10, 2026</p>
+        </div>
+
+    </div>
+
+    <div class="data-actions">
+        <button>Backup Now</button>
+        <button class="danger">Clear Records</button>
+    </div>
+
+</div>
+
+{% endblock %}

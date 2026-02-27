@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ExamGuard</title>
+    <link rel="stylesheet" href="/static/css/settings.css">
+    <link rel="stylesheet" href="/static/css/settings_css/account.css">
+    <link rel="stylesheet" href="/static/css/settings_css/camera.css">
+    <link rel="stylesheet" href="/static/css/settings_css/alert.css">
+    <link rel="stylesheet" href="/static/css/settings_css/data.css">
+    <link rel="stylesheet" href="/static/css/settings_css/change_pass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<style>
+body{
+    margin: 0%;
+}
+</style>
+
+<body>
+
+{% block content %}
+
+<div class="settings-container">
+
+    <div class="settings-sidebar">
+
+        <a href="{{ url_for('dashboard') }}" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+
+        <a href="{{ url_for('account') }}" class="btn">Account</a>
+        <a href="{{ url_for('camera_settings') }}" class="btn">Camera</a>
+        <a href="{{ url_for('alerts_settings') }}" class="btn">Alert sounds</a>
+        <a href="{{ url_for('data_settings') }}" class="btn">Data / Records</a>
+
+        <a href="{{ url_for('logout') }}" class="logout">Log out</a>
+    </div>
+
+    <div class="settings-container1">
+        <div class="settings-content">
+            {% block settings_content %}
+            {% endblock %}
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}
+
+</body>
+</html>

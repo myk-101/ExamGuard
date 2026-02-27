@@ -1,0 +1,57 @@
+/* HISTORY PAGE */
+.history-container {
+    padding: 30px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background: linear-gradient(to right, #1f6f8b, #0f4c5c);
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.history-header h2 {
+    color: white;
+    font-size: 32px;
+}
+
+/* Filter Dropdown */
+.filter-box select {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background: #dcdcdc;
+    cursor: pointer;
+}
+
+/* GRID */
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.history-card {
+    background: #1d5c73;
+    border: 2px solid #0e3e4f;
+    padding: 15px;
+    height: 230px;
+    color: white;
+}
+
+/* PICTURE BOX */
+.history-picture {
+    height: 150px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}

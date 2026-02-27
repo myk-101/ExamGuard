@@ -1,0 +1,139 @@
+.dashboard-container {
+    display: flex;
+    height: calc(100vh - 70px);
+    background: linear-gradient(to right, #1f6f8b, #0f4c5c);
+    overflow: hidden; 
+}
+
+.sidebar {
+    width: 280px;
+    background: #155e75;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .records {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: flex-end;  
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.sidebar a i {
+    font-size: 18px;
+    color: white;
+    background: #155e75;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidebar a i:hover {
+    background: #0f4c5c;
+    transform: scale(1.1);
+}
+
+.sidebar .records::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar .records::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+.alert-card {
+    background: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid #cfcfcf;
+}
+
+.camera-box {
+    height: 150px;
+    background: #2c7da0;
+}
+
+.alert-info {
+    padding: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background: #ff5e00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    padding: 0 40px;
+    overflow-y: auto;  
+}
+
+/* CAMERA GRID */
+.camera-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 10px;
+    background: #e5e5e5;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #cfcfcf;
+    margin-top: 20px;
+}
+
+.cam {
+    background: #f0f0f0;
+    border: 1px solid #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* RECORD BAR */
+.dashboard-records-bar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #e5e5e5;
+    border: 2px solid #cfcfcf;
+    border-radius: 6px;
+    padding: 10px 15px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-records-title {
+    font-weight: bold;
+}
+
+.time-date {
+    display: flex;
+    gap: 15px;
+}
+
+.box {
+    background: white;
+    border: 2px solid #cfcfcf;
+    padding: 8px 20px;
+    font-weight: bold;
+}

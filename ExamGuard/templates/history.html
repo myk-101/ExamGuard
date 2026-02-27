@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="history-container">
+
+    <div class="history-header">
+        <h2>Records History</h2>
+
+        <div class="filter-box">
+            <select>
+                <option>Filters by Date and Time</option>
+                <option>Today</option>
+                <option>This Week</option>
+                <option>This Month</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="history-grid">
+
+        {% for i in range(15) %}
+        <div class="history-card">
+            <div class="history-picture">Picture</div>
+            <p>Time/Date:</p>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

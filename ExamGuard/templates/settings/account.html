@@ -1,0 +1,28 @@
+{% extends "settings.html" %}
+
+{% block settings_content %}
+
+<div class="account-card">
+
+    <div class="account-top">
+        
+        <div class="profile-box">
+            <img src="/static/img/user (3).png" alt="">
+        </div>
+
+        <div class="account-info">
+            <h1>Juan Carlo Buenavista</h1>
+            <p>Teacher</p>
+            <div class="input-group">
+                <input type="text" value="•••••••••••••••••••••••" readonly>
+                <label>Password</label>
+            </div>
+            <a href="{{ url_for('changepass_settings') }}">Change password</a>
+            
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

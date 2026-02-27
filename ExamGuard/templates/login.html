@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ExamGuard Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+
+<div class="shape"></div>
+<div class="login-card">
+
+    <div class="logo-area">
+        <img src="/static/img/examguard_logo.png" class="logo">
+        <div>
+            <h2>ExamGuard</h2>
+            <p>Ensuring secure teacher access<br>to real-time exam monitoring.</p>
+        </div>
+    </div>
+
+    <h3 class="welcome-text">Welcome</h3>
+
+    <form id="loginForm">
+        <div class="input-group">
+            <input type="text" id="teacher" required 
+                pattern="\d{2}-\d{5}" 
+                title="Format must be: 20-01568">
+            <label for="teacher">Teacher ID</label>
+        </div>
+
+        <div class="input-group password-group">
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+            <span class="toggle-password" onclick="togglePassword()">
+                <i class="fa fa-eye"></i>
+            </span>
+        </div>
+
+        <button type="submit">LOG IN</button>
+    </form>
+
+    <p class="forgot">Forgot password</p>
+
+</div>
+<script>
+function togglePassword() {
+    const password = document.getElementById("password");
+    const icon = document.querySelector(".toggle-password i");
+
+    if (password.type === "password") {
+        password.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    } else {
+        password.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+}
+
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const teacherID = document.getElementById("teacher").value;
+    const password = document.getElementById("password").value;
+    const errorMessage = document.getElementById("error-message");
+
+    const teacherPattern = /^\d{2}-\d{5}$/;
+
+    if (!teacherPattern.test(teacherID)) {
+        errorMessage.textContent = "Teacher ID must be in format: ##-#####";
+        return;
+    }
+
+    // SAMPLE VALID ACCOUNT
+    const validTeacherID = "20-01568";
+    const validPassword = "exam123";
+
+    if (teacherID === validTeacherID && password === validPassword) {
+        window.location.href = "/dashboard";
+    } else {
+        errorMessage.textContent = "Invalid Teacher ID or Password!";
+    }
+});
+</script>
+</body>
+</html>

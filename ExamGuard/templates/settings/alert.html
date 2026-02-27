@@ -1,0 +1,39 @@
+{% extends "settings.html" %}
+
+{% block settings_content %}
+
+<div class="alerts-card">
+
+    <h1>Alert Sounds</h1>
+
+    <div class="alerts-section">
+
+        <div class="sound-group">
+            <label>Alert Sound Type</label>
+            <select>
+                <option>Default Alarm</option>
+                <option>Warning Beep</option>
+                <option>Siren</option>
+                <option>Notification Tone</option>
+            </select>
+        </div>
+
+        <div class="sound-group">
+            <label>Volume</label>
+            <input type="range" min="0" max="100">
+        </div>
+
+        <div class="sound-group">
+            <label>
+                <input type="checkbox" checked>
+                Enable Sound Alerts
+            </label>
+        </div>
+
+        <button type="button">Save Changes</button>
+
+    </div>
+
+</div>
+
+{% endblock %}

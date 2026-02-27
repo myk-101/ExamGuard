@@ -1,0 +1,89 @@
+/* ===== TOP NAVBAR ===== */
+.topbar {
+    height: 70px;
+    background: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 2px solid #b5b5b5;
+    box-sizing: border-box;
+}
+
+/* LEFT SIDE (LOGO + NAME) */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-box img{
+  width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #1f6f8b, #0f4c5c);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f4c5c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    margin-left: 60%; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Hover underline effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #1f6f8b;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1f6f8b;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* SETTINGS ICON BOX */
+.settings-box {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #1f6f8b, #0f4c5c);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.settings-box i {
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.settings-box:hover i {
+    transform: rotate(90deg);
+}

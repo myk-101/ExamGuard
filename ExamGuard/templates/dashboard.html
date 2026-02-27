@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+        <a href="{{ url_for('records') }}"><i class="fas fa-expand"></i></a>
+        <div class="records">
+            <div class="alert-card">
+              <div class="camera-box"></div>
+              <div class="alert-info">
+                  <span class="dot"></span>
+                  Suspicious &nbsp; Seat #:
+              </div>
+          </div>
+
+          <div class="alert-card">
+              <div class="camera-box"></div>
+              <div class="alert-info">
+                  <span class="dot"></span>
+                  Suspicious &nbsp; Seat #:
+              </div>
+          </div>
+
+          <div class="alert-card">
+              <div class="camera-box"></div>
+              <div class="alert-info">
+                  <span class="dot"></span>
+                  Suspicious &nbsp; Seat #:
+              </div>
+          </div>
+
+          <div class="alert-card">
+              <div class="camera-box"></div>
+              <div class="alert-info">
+                  <span class="dot"></span>
+                  Suspicious &nbsp; Seat #:
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!-- CAMERA GRID -->
+        <div class="camera-grid">
+            <div class="cam">CAM 1</div>
+            <div class="cam">CAM 2</div>
+            <div class="cam">CAM 3</div>
+            <div class="cam">CAM 4</div>
+        </div>
+
+        <!-- TIME AND DATE -->
+        <div class="dashboard-records-bar">
+            <div class="dashboard-records-title">
+                TIME AND DATE RECORDS
+            </div>
+
+            <div class="time-date">
+                <div id="time" class="box">TIME : </div>
+                <div id="date" class="box">DATE :</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+function updateClock() {
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    let ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12; 
+
+    hours = hours.toString().padStart(2, '0');
+    minutes = minutes.toString().padStart(2, '0');
+    seconds = seconds.toString().padStart(2, '0');
+
+    document.getElementById("time").innerHTML =
+        "TIME : " + hours + ":" + minutes + ":" + seconds + " " + ampm;
+
+    // Date
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = now.toLocaleDateString('en-US', options);
+
+    document.getElementById("date").innerHTML =
+        "DATE : " + formattedDate;
+}
+
+setInterval(updateClock, 1000);
+
+updateClock();
+</script>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "settings.html" %}
+
+{% block settings_content %}
+
+<div class="camera-card">
+
+    <h1>Camera Settings</h1>
+
+    <div class="camera-section">
+
+        <!-- Camera Preview Box -->
+        <div class="camera-preview">
+            Camera Preview
+        </div>
+
+        <!-- Camera Controls -->
+        <div class="camera-controls">
+
+            <div class="control-group">
+                <label>Camera Status</label>
+                <select>
+                    <option>Enabled</option>
+                    <option>Disabled</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Resolution</label>
+                <select>
+                    <option>1920x1080</option>
+                    <option>1280x720</option>
+                    <option>640x480</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Frame Rate</label>
+                <select>
+                    <option>60 FPS</option>
+                    <option>30 FPS</option>
+                    <option>24 FPS</option>
+                </select>
+            </div>
+
+            <button type="button">Save Changes</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
