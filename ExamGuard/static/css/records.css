@@ -39,4 +39,45 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+
+}
+
+@media (max-width: 1024px) {
+    .records-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .records-container {
+        padding: 20px 15px;
+        height: auto;
+    }
+
+    .records-title {
+        font-size: 24px;
+    }
+
+    .records-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .record-card {
+        height: auto;
+        padding: 12px;
+    }
+
+    .record-picture {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .records-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
