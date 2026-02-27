@@ -19,9 +19,10 @@
 }
 
 .sidebar .records {
-    flex: 1;
-    overflow-y: auto; 
-    padding-right: 10px;
+    overflow-y: auto;
+    padding-right: 3px;
+    scrollbar-width: none;         
+    -ms-overflow-style: none;    
 }
 
 .sidebar a {
@@ -206,3 +207,4 @@
     }
 
 }
+
