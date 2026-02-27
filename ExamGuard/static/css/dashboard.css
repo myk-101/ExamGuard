@@ -2,20 +2,22 @@
     display: flex;
     height: calc(100vh - 70px);
     background: linear-gradient(to right, #1f6f8b, #0f4c5c);
+    overflow: hidden; /* para hindi humaba */
 }
 
 .sidebar {
     width: 280px;
+    height: 100%;
     background: #155e75;
     padding: 15px;
     display: flex;
     flex-direction: column;
-     overflow: hidden; 
+    overflow: hidden;
 }
 
 .sidebar .records {
     flex: 1;
-    overflow-y: auto;
+    overflow-y: auto; /* ito lang mag scroll */
     padding-right: 10px;
 }
 
@@ -102,9 +104,10 @@
     border: 1px solid #cfcfcf;
     display: flex;
     justify-content: center;
-    align-items: start;
-    padding: 10px;
+    align-items: center;
     font-weight: bold;
+
+    aspect-ratio: 16 / 9;
 }
 
 /* RECORD BAR */
@@ -142,18 +145,16 @@
     .dashboard-container {
         flex-direction: column;
         height: calc(100vh - 70px);
+        overflow: hidden;
     }
 
     .sidebar {
         width: 100%;
-        height: 200px; /* fixed height */
-    }
-
-    .sidebar .records {
-        overflow-y: auto;
+        height: 35vh; /* fixed top alert area */
     }
 
     .main-content {
+        flex: 1;
         padding: 15px;
         overflow-y: auto;
     }
@@ -162,7 +163,4 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .cam {
-        height: 180px;
-    }
 }
