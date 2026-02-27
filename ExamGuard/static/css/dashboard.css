@@ -2,7 +2,6 @@
     display: flex;
     height: calc(100vh - 70px);
     background: linear-gradient(to right, #1f6f8b, #0f4c5c);
-    overflow: hidden; 
 }
 
 .sidebar {
@@ -11,6 +10,7 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
+     overflow: hidden; 
 }
 
 .sidebar .records {
@@ -82,14 +82,13 @@
 .main-content {
     flex: 1;
     padding: 0 40px;
-    overflow-y: auto;  
+    overflow-y: auto;
 }
 
 /* CAMERA GRID */
 .camera-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 250px;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     background: #e5e5e5;
     padding: 10px;
@@ -136,4 +135,34 @@
     border: 2px solid #cfcfcf;
     padding: 8px 20px;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        flex-direction: column;
+        height: calc(100vh - 70px);
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 200px; /* fixed height */
+    }
+
+    .sidebar .records {
+        overflow-y: auto;
+    }
+
+    .main-content {
+        padding: 15px;
+        overflow-y: auto;
+    }
+
+    .camera-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cam {
+        height: 180px;
+    }
 }
