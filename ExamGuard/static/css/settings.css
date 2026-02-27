@@ -10,7 +10,6 @@
     background: linear-gradient(to bottom, #1f6f8b, #0f4c5c);
     display: flex;
     flex-direction: column;
-    height: auto;
     padding-top: 10px;
     border-right: 2px solid rgba(0,0,0,0.3);
 }
@@ -60,12 +59,15 @@
 
     .settings-container {
         flex-direction: column;
-        height: calc(100vh - 70px);
+        min-height: 100vh;
     }
 
     .settings-sidebar {
         width: 100%;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
         overflow-x: auto;
         border-right: none;
         border-bottom: 2px solid rgba(0,0,0,0.3);
@@ -73,17 +75,17 @@
 
     .settings-sidebar a,
     .settings-sidebar .btn {
-        padding: 8px 12px;
+        padding: 8px 10px;
         font-size: 12px;
+        white-space: nowrap;
     }
 
     .settings-sidebar .logout {
-        margin-top: 0;
-        margin-left: auto;
+        color: red;
+        font-weight: bold;
     }
 
     .settings-container1 {
-        padding: 20px;
+        padding: 15px;
     }
 }
-
