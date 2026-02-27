@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-/* Header Section */
 .history-header {
     display: flex;
     justify-content: space-between;
@@ -20,7 +19,6 @@
     font-size: 32px;
 }
 
-/* Filter Dropdown */
 .filter-box select {
     padding: 10px 15px;
     font-size: 14px;
@@ -37,7 +35,6 @@
     gap: 25px;
 }
 
-/* CARD */
 .history-card {
     background: #1d5c73;
     border: 2px solid #0e3e4f;
@@ -46,7 +43,6 @@
     color: white;
 }
 
-/* PICTURE BOX */
 .history-picture {
     height: 150px;
     border: 2px solid white;
@@ -54,4 +50,59 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .history-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .history-container {
+        padding: 20px 15px;
+        height: calc(100vh - 70px); 
+    }
+
+    .history-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .history-header h2 {
+        font-size: 24px;
+    }
+
+    .filter-box {
+        width: 100%;
+    }
+
+    .filter-box select {
+        width: 100%;
+    }
+
+    .history-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .history-card {
+        height: auto;
+        padding: 12px;
+    }
+
+    .history-picture {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
