@@ -64,25 +64,34 @@
 
     .settings-sidebar {
         width: 100%;
+        display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        padding: 5px 10px;
+        gap: 15px;               
+        padding: 8px 12px;
         overflow-x: auto;
         border-right: none;
         border-bottom: 2px solid rgba(0,0,0,0.3);
+        scrollbar-width: none;    
+    }
+
+    .settings-sidebar::-webkit-scrollbar {
+        display: none;             
     }
 
     .settings-sidebar a,
     .settings-sidebar .btn {
-        padding: 8px 10px;
+        padding: 6px 10px;
         font-size: 12px;
         white-space: nowrap;
+        flex-shrink: 0;           
     }
 
     .settings-sidebar .logout {
         color: red;
         font-weight: bold;
+        flex-shrink: 0;
+        margin-left: 10px;
     }
 
     .settings-container1 {
