@@ -56,8 +56,11 @@
 @media (max-width: 768px) {
 
     .history-container {
+        height: calc(100dvh - 70px);
         padding: 20px 15px;
-        height: calc(100vh - 70px);
+
+        overflow-y: auto;    
+        -webkit-overflow-scrolling: touch; 
     }
 
     .history-header {
