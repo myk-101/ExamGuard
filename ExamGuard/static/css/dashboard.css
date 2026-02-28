@@ -156,6 +156,9 @@
         height: auto;
         margin: auto;
         max-height: 35vh;
+
+        display: flex;
+        align-items: center;
     }
 
     .sidebar .records {
@@ -185,6 +188,7 @@
         gap: 10px;
         padding: 10px;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .dashboard-records-title {
