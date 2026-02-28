@@ -53,8 +53,13 @@
     background: #1d5c73;
     border: 2px solid #0e3e4f;
     padding: 15px;
-    height: 230px;
+    height: auto;
     color: white;
+}
+
+.history-card p{
+    font-size: 12px;
+    margin: 0%;
 }
 
 .history-picture {
@@ -104,6 +109,11 @@
     .history-card {
         height: auto;
         padding: 12px;
+    }
+
+    .history-card p{
+        font-size: 12px;
+        margin: 0%;
     }
 
     .history-picture {
