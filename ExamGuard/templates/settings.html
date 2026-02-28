@@ -25,7 +25,6 @@ body{
 
 <div class="settings-container">
 
-    <!-- MOBILE HEADER (always visible on mobile) -->
     <div class="mobile-header">
         <a href="{{ url_for('dashboard') }}" class="back-btn">
             <i class="fas fa-arrow-left"></i>
@@ -38,13 +37,27 @@ body{
         </button>
     </div>
 
-    <!-- SIDEBAR (slide from right) -->
     <div class="settings-sidebar" id="mobileSidebar">
         <div class="sidebar-links">
-            <a href="{{ url_for('account') }}" class="btn">Account</a>
-            <a href="{{ url_for('camera_settings') }}" class="btn">Camera</a>
-            <a href="{{ url_for('alerts_settings') }}" class="btn">Alert sounds</a>
-            <a href="{{ url_for('data_settings') }}" class="btn">Data / Records</a>
+            <a href="{{ url_for('dashboard') }}" class="btn">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="{{ url_for('account') }}"
+            class="btn {% if request.endpoint == 'account' %}active{% endif %}">
+            Account
+            </a>
+            <a href="{{ url_for('camera_settings') }}"
+            class="btn {% if request.endpoint == 'camera_settings' %}active{% endif %}">
+            Camera
+            </a>
+            <a href="{{ url_for('alerts_settings') }}"
+            class="btn {% if request.endpoint == 'alerts_settings' %}active{% endif %}">
+            Alert sounds
+            </a>
+            <a href="{{ url_for('data_settings') }}"
+            class="btn {% if request.endpoint == 'data_settings' %}active{% endif %}">
+            Data / Records
+            </a>
             <a href="{{ url_for('logout') }}" class="logout">Log out</a>
         </div>
     </div>
