@@ -158,9 +158,9 @@
         max-height: 250px;  
         padding: 10px;
     }
-
+    
     .sidebar .records {
-        margin: 0%;
+         padding-right: 0;
         overflow-y: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -173,7 +173,7 @@
     .main-content {
         padding: 15px;
         height: auto;
-        overflow: visible;
+        overflow-y: auto;
     }
 
     .camera-grid {
