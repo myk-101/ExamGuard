@@ -148,7 +148,11 @@
 
     .dashboard-container {
         flex-direction: column;
-        min-height: calc(100vh - 70px);
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 18px;
+        box-sizing: border-box;
     }
 
     .sidebar {
