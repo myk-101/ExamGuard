@@ -75,7 +75,7 @@
     left: 12px;
     font-size: 13px;
     color: #444;
-    background: white;
+    background: transparent;
     padding: 0 5px;
     transition: 0.3s;
 }
