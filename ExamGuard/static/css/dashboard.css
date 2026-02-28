@@ -147,7 +147,7 @@
 
     .dashboard-container {
         flex-direction: column;
-        min-height: 100vh;  
+        height: 100vh;  
         height: auto;
     }
 
@@ -159,6 +159,7 @@
     }
     
     .sidebar .records {
+        padding-right: 0;
         overflow-y: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
