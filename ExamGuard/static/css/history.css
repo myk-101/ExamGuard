@@ -58,16 +58,13 @@
     .history-container {
         height: calc(100dvh - 70px);
         padding: 20px 15px;
-
-        overflow-y: auto;    
-        -webkit-overflow-scrolling: touch; 
     }
 
     .history-header {
+        flex-shrink: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: sticky;
     }
 
     .history-header h2 {
@@ -82,6 +79,9 @@
     }
 
     .history-grid {
+        flex: 1;               
+        overflow-y: auto;  
+        -webkit-overflow-scrolling: touch; 
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
