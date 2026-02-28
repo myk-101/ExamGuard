@@ -42,9 +42,10 @@
 
 @media (max-width: 768px) {
 
-    .records-container {
-        min-height: calc(100vh - 70px); 
+    .records-container { 
         padding: 20px 15px;
+        height: 100vh;  
+        height: auto;
     }
 
     .records-title {
