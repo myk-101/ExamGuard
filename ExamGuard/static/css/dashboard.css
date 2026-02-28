@@ -182,29 +182,31 @@
 
     .dashboard-records-bar {
         flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        padding: 12px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        align-items: center;      
+        gap: 8px;                
+        padding: 10px;
+        margin: 15px auto 20px auto;
+        width: 95%;
+        max-width: 420px;        
     }
 
     .dashboard-records-title {
-        font-size: 16px;
+        font-size: 14px;         
         text-align: center;
+        margin-bottom: 5px;
     }
 
     .time-date {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         width: 100%;
     }
 
     .box {
         width: 100%;
         text-align: center;
-        font-size: 14px;
-        padding: 10px;
+        font-size: 12px;         
+        padding: 5px 6px;        
     }
 
 }
