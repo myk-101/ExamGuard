@@ -77,6 +77,10 @@
         padding: 12px;
     }
 
+    .record-card p{
+        font-size: 12px;
+    }
+
     .record-picture {
         height: 120px;
     }
