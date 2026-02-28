@@ -1,6 +1,8 @@
-/* ALERTS CARD */
+*{
+    box-sizing: border-box;
+}
 .alerts-card {
-    width: 1000px;
+    width: 100%;
     height: 550px;
     background: #e6e6e6;
     border-radius: 30px;
@@ -41,4 +43,39 @@
     border-radius: 10px;
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+    .alerts-card {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 18px;
+        box-sizing: border-box;
+    }
+
+    .alerts-card h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .alerts-section {
+        width: 100%;               
+    }
+
+    .sound-group {
+        margin-bottom: 20px;
+    }
+
+    .sound-group label {
+        font-size: 13px;
+    }
+
+    .alerts-section button {
+        width: 100%;              
+        padding: 14px;
+        margin-top: 15px;
+    }
 }
