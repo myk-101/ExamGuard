@@ -73,7 +73,7 @@
     }
 
     .record-card {
-        height: 500px;
+        height: auto;
         padding: 12px;
     }
 
