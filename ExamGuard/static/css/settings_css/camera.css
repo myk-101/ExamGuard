@@ -1,7 +1,9 @@
-/* CAMERA CARD */
+*{
+    box-sizing: border-box;
+}
 .camera-card {
-   width: 1000px;
-    height: 500px;
+    width: 100%;
+    height: 550px;
     background: #e6e6e6;
     border-radius: 25px;
     padding: 80px 100px;
@@ -10,19 +12,16 @@
     flex-direction: column;
 }
 
-/* TITLE */
 .camera-card h1 {
     margin: 0 0 40px 0;
     font-size: 30px;
 }
 
-/* SECTION LAYOUT */
 .camera-section {
     display: flex;
     gap: 80px;
 }
 
-/* PREVIEW BOX */
 .camera-preview {
     width: 400px;
     height: 300px;
@@ -35,12 +34,10 @@
     font-weight: bold;
 }
 
-/* CONTROLS */
 .camera-controls {
     flex: 1;
 }
 
-/* CONTROL GROUP */
 .control-group {
     margin-bottom: 25px;
 }
@@ -59,12 +56,12 @@
     background: white;
 }
 
-/* BUTTON */
 .camera-controls button {
     margin-top: 30px;
     padding: 14px 60px;
     background: linear-gradient(to bottom, #2c7da0, #168aad);
     border: none;
+    width: 250px;
     border-radius: 10px;
     color: white;
     font-size: 15px;
@@ -74,4 +71,46 @@
 
 .camera-controls button:hover {
     transform: translateY(-2px);
+}
+
+@media (max-width: 768px){
+
+    .camera-card {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 18px;
+        box-sizing: border-box;
+    }
+
+    .camera-card h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .camera-section {
+        flex-direction: column;  
+        gap: 25px;
+    }
+
+    .camera-preview {
+        width: 100%;             
+        height: 220px;            
+        border-radius: 15px;
+    }
+
+    .camera-controls {
+        width: 100%;
+    }
+
+    .control-group select {
+        width: 100%;              
+    }
+
+    .camera-controls button {
+        width: 100%;              
+        padding: 14px;
+        margin-top: 20px;
+    }
 }
