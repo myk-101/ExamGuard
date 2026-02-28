@@ -148,62 +148,64 @@
 
     .dashboard-container {
         flex-direction: column;
-        height: calc(100vh - 70px);
+        min-height: 100vh;  
+        height: auto;
+        overflow: visible;
     }
 
     .sidebar {
         width: 100%;
         height: auto;
-        margin: auto;
-        max-height: 35vh;
+        max-height: 250px;  
+        padding: 10px;
     }
 
     .sidebar .records {
-        width: 100%;
         overflow-y: auto;
-        scrollbar-width: none;         
-        -ms-overflow-style: none;    
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
     .sidebar .records::-webkit-scrollbar {
-        display: none;   
+        display: none;
     }
 
     .main-content {
-        flex: 1;
         padding: 15px;
         height: auto;
-        max-height: 40vh;
-        overflow-y: auto;
+        overflow: visible;
     }
 
     .camera-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
     }
 
     .dashboard-records-bar {
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
-        padding: 10px;
-        width: 100%;
+        gap: 12px;
+        padding: 12px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .dashboard-records-title {
-        font-size: 14px;
+        font-size: 16px;
+        text-align: center;
     }
 
     .time-date {
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
         width: 100%;
     }
 
     .box {
         width: 100%;
         text-align: center;
-        font-size: 13px;
-        padding: 8px;
+        font-size: 14px;
+        padding: 10px;
     }
 
 }
