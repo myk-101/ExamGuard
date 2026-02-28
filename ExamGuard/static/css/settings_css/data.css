@@ -1,6 +1,6 @@
 /* DATA CARD */
 .data-card {
-    width: 1000px;
+    width: 100%;
     height: 550px;
     background: #e6e6e6;
     border-radius: 30px;
@@ -55,4 +55,50 @@
 
 .data-actions .danger {
     background: linear-gradient(to bottom, #d9534f, #c9302c);
+}
+
+@media (max-width: 768px){
+
+    .data-card {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 18px;
+        box-sizing: border-box;
+    }
+
+    .data-card h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .data-section {
+        flex-direction: column;   
+        gap: 20px;
+    }
+
+    .data-box {
+        width: 100%;               
+        padding: 20px;
+    }
+
+    .data-box h3 {
+        font-size: 14px;
+    }
+
+    .data-box p {
+        font-size: 18px;
+    }
+
+    .data-actions {
+        flex-direction: column;   
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .data-actions button {
+        width: 100%;              
+        padding: 14px;
+    }
 }
