@@ -57,8 +57,7 @@
 
     .records-container {
         height: calc(100dvh - 70px);
-        padding: 20px 15px;
-
+        padding: 15px 0;
         overflow-y: auto;    
         -webkit-overflow-scrolling: touch; 
     }
@@ -68,6 +67,7 @@
     }
 
     .records-grid {
+        padding: 20px;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
