@@ -42,10 +42,12 @@
 
 @media (max-width: 768px) {
 
-    .records-container { 
+    .records-container {
+        height: calc(100vh - 70px);
         padding: 20px 15px;
-        height: 100vh;  
-        height: auto;
+
+        overflow-y: auto;    
+        -webkit-overflow-scrolling: touch; 
     }
 
     .records-title {
