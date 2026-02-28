@@ -183,8 +183,7 @@
     .dashboard-records-bar {
         flex-direction: column;
         align-items: center;      
-        gap: 8px;                
-        padding: 10px;
+        gap: 8px;  
         margin: 15px auto 20px auto;
         width: 95%;
         max-width: 420px;        
