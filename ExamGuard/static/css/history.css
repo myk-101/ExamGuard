@@ -67,6 +67,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: sticky;
     }
 
     .history-header h2 {
